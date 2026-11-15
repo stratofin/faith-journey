@@ -1,0 +1,12 @@
+{
+  "name": "信心之旅：直到晨光來臨",
+  "short_name": "信心之旅",
+  "description": "手機優先、俯視 45 度的生存闖關信仰遊戲，一個人或最多三個人同行",
+  "start_url": ".",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#FFF4DF",
+  "theme_color": "#FFF4DF",
+  "lang": "zh-Hant",
+  "icons": []
+}

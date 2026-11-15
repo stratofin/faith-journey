@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="510" height="375" viewBox="0 0 340 250"><defs>
+<filter id="hand" x="-5%" y="-5%" width="110%" height="110%">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="2.6" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="g"/>
+<feColorMatrix in="g" type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.25  0 0 0 0 0.2  0 0 0 -1.1 0.62" result="gm"/>
+<feComposite in="gm" in2="d" operator="in" result="gi"/>
+<feBlend in="gi" in2="d" mode="multiply"/>
+</filter>
+<filter id="paper" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" seed="11"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.42  0 0 0 0 0.33  0 0 0 0 0.26  0 0 0 -0.9 0.5"/>
+</filter>
+</defs><g filter="url(#hand)"><ellipse cx="170" cy="150" rx="158" ry="92" fill="#7A6A5E" opacity=".28"/><path d="M40,150 q40,-50 90,-10 q40,-50 90,0 q40,-30 70,10" fill="none" stroke="#6E5A4C" stroke-width="6" stroke-linecap="round" opacity=".7"/><path d="M267,165 L277,151 L287,165Z" fill="#8A7868" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M100,117 L110,107 L120,117Z" fill="#8A7868" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M203,198 L213,181 L223,198Z" fill="#8A7868" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M71,155 L81,137 L91,155Z" fill="#8A7868" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M50,167 L60,155 L70,167Z" fill="#8A7868" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M261,178 L271,166 L281,178Z" fill="#8A7868" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M116,130 L126,120 L136,130Z" fill="#8A7868" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M86,103 L96,85 L106,103Z" fill="#8A7868" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M62,168 L72,157 L82,168Z" fill="#8A7868" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M179,122 L189,109 L199,122Z" fill="#8A7868" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/></g></svg>
