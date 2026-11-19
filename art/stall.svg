@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="390" viewBox="0 0 300 260"><defs>
+<filter id="hand" x="-5%" y="-5%" width="110%" height="110%">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="2.6" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="g"/>
+<feColorMatrix in="g" type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.25  0 0 0 0 0.2  0 0 0 -1.1 0.62" result="gm"/>
+<feComposite in="gm" in2="d" operator="in" result="gi"/>
+<feBlend in="gi" in2="d" mode="multiply"/>
+</filter>
+<filter id="paper" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" seed="11"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.42  0 0 0 0 0.33  0 0 0 0 0.26  0 0 0 -0.9 0.5"/>
+</filter>
+</defs><g filter="url(#hand)"><ellipse cx="150" cy="244" rx="136" ry="14" fill="#4A3B32" opacity=".16"/><path d="M40,120 v120 M260,120 v120" stroke="#8A6A55" stroke-width="10" stroke-linecap="round"/><path d="M30,170 h240 v40 h-240Z" fill="#C99A6B" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><ellipse cx="90" cy="168" rx="30" ry="14" fill="#E8B878" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><ellipse cx="160" cy="166" rx="26" ry="14" fill="#A8C8A0" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><ellipse cx="220" cy="168" rx="26" ry="13" fill="#EFA89B" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M14,124 L40,40 h220 l26,84Z" fill="#FFF4DF" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M40,40 h22 l-6,84 h-24Z" fill="#E4574B" opacity=".85"/><path d="M84,40 h22 l-2,84 h-24Z" fill="#E4574B" opacity=".85"/><path d="M128,40 h22 l2,84 h-24Z" fill="#E4574B" opacity=".85"/><path d="M172,40 h22 l6,84 h-24Z" fill="#E4574B" opacity=".85"/><path d="M216,40 h22 l10,84 h-24Z" fill="#E4574B" opacity=".85"/><path d="M14,124 q22,14 44,0 q22,14 44,0 q22,14 44,0 q22,14 44,0 q22,14 44,0 q22,14 44,0 q22,14 30,0" fill="#FFF4DF" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/></g></svg>

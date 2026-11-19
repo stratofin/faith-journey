@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="330" height="570" viewBox="0 0 220 380"><defs>
+<filter id="hand" x="-5%" y="-5%" width="110%" height="110%">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="2.6" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="g"/>
+<feColorMatrix in="g" type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.25  0 0 0 0 0.2  0 0 0 -1.1 0.62" result="gm"/>
+<feComposite in="gm" in2="d" operator="in" result="gi"/>
+<feBlend in="gi" in2="d" mode="multiply"/>
+</filter>
+<filter id="paper" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" seed="11"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.42  0 0 0 0 0.33  0 0 0 0 0.26  0 0 0 -0.9 0.5"/>
+</filter>
+</defs><g filter="url(#hand)"><ellipse cx="110" cy="360" rx="100" ry="16" fill="#4A3B32" opacity=".16"/><path d="M24,120 h172 v240 h-172Z" fill="#E6D3AE" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M140,120 h56 v240 h-56Z" fill="#CDB58C" opacity=".7"/><path d="M14,96 h192 v30 h-192Z" fill="#F3E6CC" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M18,96 v-30 h30 v30Z" fill="#F3E6CC" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M68,96 v-30 h30 v30Z" fill="#F3E6CC" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M118,96 v-30 h30 v30Z" fill="#F3E6CC" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M168,96 v-30 h30 v30Z" fill="#F3E6CC" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M92,200 q18,-22 36,0 v40 h-36Z" fill="#6E5A4C" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M150,140 h34 v86 l-17,-12 l-17,12Z" fill="#C4574B" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="167" cy="172" r="9" fill="none" stroke="#F5D58A" stroke-width="3"/></g></svg>
