@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="270" viewBox="0 0 160 180"><defs>
+<filter id="hand" x="-5%" y="-5%" width="110%" height="110%">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="2.6" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="g"/>
+<feColorMatrix in="g" type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.25  0 0 0 0 0.2  0 0 0 -1.1 0.62" result="gm"/>
+<feComposite in="gm" in2="d" operator="in" result="gi"/>
+<feBlend in="gi" in2="d" mode="multiply"/>
+</filter>
+<filter id="paper" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" seed="11"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.42  0 0 0 0 0.33  0 0 0 0 0.26  0 0 0 -0.9 0.5"/>
+</filter>
+</defs><g filter="url(#hand)"><path d="M80,12 C92,40 120,44 126,78 C140,70 150,84 146,104 C144,140 118,168 80,168 C42,168 16,140 14,104 C10,84 20,70 34,78 C40,44 68,40 80,12Z" fill="#4A4563" stroke="#3A3650" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M40,96 C36,124 54,150 80,152" fill="none" stroke="#77709A" stroke-width="4" stroke-linecap="round" opacity=".6"/><ellipse cx="60" cy="102" rx="13" ry="16" fill="#FFF4DF"/><ellipse cx="100" cy="102" rx="13" ry="16" fill="#FFF4DF"/><circle cx="62" cy="106" r="5" fill="#3A3650"/><circle cx="98" cy="106" r="5" fill="#3A3650"/><path d="M68,136 q12,-8 24,0" fill="none" stroke="#FFF4DF" stroke-width="3" stroke-linecap="round"/></g></svg>

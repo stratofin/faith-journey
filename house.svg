@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="750" viewBox="0 0 560 500"><defs>
+<filter id="hand" x="-5%" y="-5%" width="110%" height="110%">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="2.6" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="g"/>
+<feColorMatrix in="g" type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.25  0 0 0 0 0.2  0 0 0 -1.1 0.62" result="gm"/>
+<feComposite in="gm" in2="d" operator="in" result="gi"/>
+<feBlend in="gi" in2="d" mode="multiply"/>
+</filter>
+<filter id="paper" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" seed="11"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.42  0 0 0 0 0.33  0 0 0 0 0.26  0 0 0 -0.9 0.5"/>
+</filter>
+</defs><g filter="url(#hand)"><ellipse cx="280" cy="476" rx="250" ry="20" fill="#4A3B32" opacity=".16"/><path d="M70,240 h420 v236 h-420Z" fill="#F3E6D0" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M390,240 h100 v236 h-100Z" fill="#E3D3B8" opacity=".8"/><path d="M26,256 L150,60 h260 L534,256Z" fill="#EFA89B" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M150,60 h260 L470,160 H90Z" fill="#F6C4BA" opacity=".7"/><path d="M110,130 h340 M70,190 h420" stroke="#5E483B" stroke-width="2.6" opacity=".3"/><path d="M230,476 v-130 q0,-34 50,-34 q50,0 50,34 v130Z" fill="#B98A62" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="312" cy="410" r="6" fill="#F5D58A" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M112,310 h76 v76 h-76Z M372,310 h76 v76 h-76Z" fill="#CFE8F2" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M150,310 v76 M112,348 h76 M410,310 v76 M372,348 h76" stroke="#5E483B" stroke-width="2.6"/><path d="M400,96 v-56 h44 v100" fill="#D8CDBB" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/></g></svg>

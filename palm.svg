@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="690" viewBox="0 0 300 460"><defs>
+<filter id="hand" x="-5%" y="-5%" width="110%" height="110%">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="2.6" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="g"/>
+<feColorMatrix in="g" type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.25  0 0 0 0 0.2  0 0 0 -1.1 0.62" result="gm"/>
+<feComposite in="gm" in2="d" operator="in" result="gi"/>
+<feBlend in="gi" in2="d" mode="multiply"/>
+</filter>
+<filter id="paper" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" seed="11"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.42  0 0 0 0 0.33  0 0 0 0 0.26  0 0 0 -0.9 0.5"/>
+</filter>
+</defs><g filter="url(#hand)"><ellipse cx="150" cy="446" rx="60" ry="12" fill="#4A3B32" opacity=".16"/><path d="M138,448 q-8,-160 10,-300 h16 q-12,140 0,300Z" fill="#B98A62" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M148,150 q-80,-60 -130,20 q32,12 130,-20Z" fill="#7FA37A" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M148,150 q80,-60 130,20 q-32,12 -130,-20Z" fill="#7FA37A" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M148,150 q-40,-100 -70,-90 q16,20 70,90Z" fill="#7FA37A" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M148,150 q40,-100 70,-90 q-16,20 -70,90Z" fill="#7FA37A" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M148,150 q-90,0 -120,80 q36,0 120,-80Z" fill="#7FA37A" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M148,150 q90,0 120,80 q-36,0 -120,-80Z" fill="#7FA37A" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/></g></svg>

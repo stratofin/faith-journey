@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="660" viewBox="0 0 260 440"><defs>
+<filter id="hand" x="-5%" y="-5%" width="110%" height="110%">
+<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="2.6" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="g"/>
+<feColorMatrix in="g" type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.25  0 0 0 0 0.2  0 0 0 -1.1 0.62" result="gm"/>
+<feComposite in="gm" in2="d" operator="in" result="gi"/>
+<feBlend in="gi" in2="d" mode="multiply"/>
+</filter>
+<filter id="paper" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" seed="11"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.42  0 0 0 0 0.33  0 0 0 0 0.26  0 0 0 -0.9 0.5"/>
+</filter>
+</defs><g filter="url(#hand)"><circle cx="130" cy="110" r="118" fill="#F5D58A" opacity=".35"/><circle cx="130" cy="110" r="74" fill="#F5D58A" opacity=".4"/><ellipse cx="130" cy="420" rx="104" ry="20" fill="#4A3B32" opacity=".16"/><path d="M50,424 h160 v-30 q0,-12 -12,-12 h-136 q-12,0 -12,12Z" fill="#D8CDBB" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M76,382 h108 v-26 h-108Z" fill="#E6DCCB" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M116,356 L120,170 h20 L144,356Z" fill="#8A6A55" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M84,170 h92 l-12,-110 h-68Z" fill="#F5D58A" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M72,60 h116 l-24,-34 h-68Z" fill="#6E5A4C" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M76,170 h108 v14 h-108Z" fill="#6E5A4C" stroke="#5E483B" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M130,60 v110 M106,62 l-8,108 M154,62 l8,108" stroke="#5E483B" stroke-width="2.6" opacity=".45"/><path d="M130,90 q16,24 0,50 q-16,-26 0,-50Z" fill="#FFF4DF" stroke="#E3B95C" stroke-width="3"/></g></svg>
